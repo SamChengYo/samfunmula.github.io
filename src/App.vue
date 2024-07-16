@@ -1,7 +1,6 @@
 <template>
   <Narbar></Narbar>
-  <Profile></Profile>
-  <Content></Content>
+  <RouterView></RouterView>
 </template>
 
 <script lang="ts">
