@@ -26,7 +26,7 @@
   import { ref, computed } from 'vue';
 
   const categories = ['All', 'Front_End', 'APP', 'Back_End', 'AI', 'Extension'];
-  const selectedCategory = ref('Front_End');
+  const selectedCategory = ref('All');
   const projects = ref([
     {
       title: '租屋網站',

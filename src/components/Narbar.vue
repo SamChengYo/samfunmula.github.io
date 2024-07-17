@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="#">
+      <router-link class="navbar-brand">
         <img src="https://yt3.ggpht.com/yti/ANjgQV-qWGVzevyDMD5MBy0mg2_xiP8GgB8MlvrITD7e7gCRoHM=s88-c-k-c0x00ffffff-no-rj" class="navbar-img">
       </router-link>
       <router-link class="navbar-brand">個人簡介</router-link>
