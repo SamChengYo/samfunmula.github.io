@@ -25,7 +25,7 @@
 <script setup lang="ts">
   import { ref, computed } from 'vue';
 
-  const categories = ['All', 'Front_End','APP', 'Back_End', 'AI', 'Extension'];
+  const categories = ['All', 'Front_End','APP', 'Back_End', 'AI'];
   const selectedCategory = ref('All');
   const projects = ref([
     {
@@ -99,6 +99,14 @@
       category: 'APP',
       image: 'src/assets/rest_app.png',
       url: 'https://github.com/Tim7179/face_recognition_release'
+    },
+    {
+      title: 'AI_Comment_Filter',
+      description: '與 Hack MD API 串接，快速建立和管理你的文案。',
+      tags: ['Python','Groq'],
+      category: 'AI',
+      image: '123.png',
+      url: 'https://github.com/samfunmula/ai_comments_filter'      
     }
   ]);
 
