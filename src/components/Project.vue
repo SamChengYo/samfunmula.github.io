@@ -30,7 +30,7 @@
   const projects = ref([
     {
       title: '租屋網站',
-      description: '提供使用者看得懂的內頁查看網站，可判斷胸腔主要標準',
+      description: '建立一個租屋網站，讓租屋人可以快速且方便的找到適合的房屋。',
       tags: ['PHP', 'JS', 'HTML','CSS'],
       category: 'Front_End',
       image: 'path/to/image1.png',
@@ -38,7 +38,7 @@
     },
     {
       title: 'Json Repair',
-      description: '一個單純的打字遊戲，參考網站「MonkeyType」',
+      description: 'jsam_json_repair是一個 Python 套件，來修復錯誤的JSON字串(例如LLM生成的json)。',
       tags: ['Python'],
       category: 'Back_End',
       image: 'src/assets/json_repair.png',
@@ -46,7 +46,7 @@
     },
     {
       title: '人臉打卡系統',
-      description: '利用16個Pattern當做作業的概念來做出的一個文字編輯器。',
+      description: '使用YoloV8建立人臉打卡的系統，並且使用QtPy將其打包成桌面應用程式。',
       tags: ['Python','Yolo','QtPy'],
       category: 'AI',
       image: 'src/assets/face_rec.png',
@@ -54,7 +54,7 @@
     },
     {
       title: 'VisualCLA',
-      description: '資料庫課程作的課堂專案',
+      description: '一個Image to Text的工API，可以將圖片轉換成文字。',
       tags: ['Python','HuggingFace'],
       category: 'AI',
       image: 'src/assets/visualcla.png',
@@ -62,7 +62,7 @@
     },
     {
       title: 'translation',
-      description: '會回傳圖片，可作為測試環境時的假圖片。',
+      description: '翻譯API，能夠翻譯200多種語言。',
       tags: ['Python','HuggingFace'],
       category: 'AI',
       image: 'path/to/image5.png',
@@ -70,7 +70,7 @@
     },
     {
       title: 'HackMD_RAG',
-      description: '使用fast whisper，即時翻譯音檔。',
+      description: '利用RAG來分析HackMD的內容，並且從中回答相應的問題，減少使用者尋找資料的時間。',
       tags: ['Vue','JS', 'HTML','CSS'],
       category: 'Front_End',
       image: 'src/assets/webUI.png',
@@ -78,7 +78,7 @@
     },
     {
       title: 'Whisper',
-      description: '與 Hack MD API 串接，快速建立和管理你的文案。',
+      description: '一個Voice to Text的API，可以自動總結會議紀錄。',
       tags: ['Python','HuggingFace'],
       category: 'AI',
       image: 'path/to/image7.png',
@@ -86,7 +86,7 @@
     },
     {
       title: 'MinIO_API',
-      description: '與 Hack MD API 串接，快速建立和管理你的文案。',
+      description: '與 MinIO_API 串接，快速進行存取。',
       tags: ['Python','FastAPI'],
       category: 'Back_End',
       image: 'src/assets/minio.png',
@@ -94,7 +94,7 @@
     },
     {
       title: '餐廳評論整合推薦',
-      description: '與 Hack MD API 串接，快速建立和管理你的文案。',
+      description: '統整高雄地區的餐廳評論，將評論做分類及評分，並且向使用者推薦建議的餐廳。',
       tags: ['Python','React'],
       category: 'APP',
       image: 'src/assets/rest_app.png',
@@ -102,7 +102,7 @@
     },
     {
       title: 'AI_Comment_Filter',
-      description: '與 Hack MD API 串接，快速建立和管理你的文案。',
+      description: '以Chrome Extension的方式，利用AI模型自動過濾使用者不希望看見的評論類型。',
       tags: ['Extension','Groq','JS'],
       category: 'Extension',
       image: 'src/assets/filter.png',
