@@ -41,7 +41,7 @@
       description: '一個單純的打字遊戲，參考網站「MonkeyType」',
       tags: ['Python'],
       category: 'Back_End',
-      image: 'path/to/image2.png',
+      image: 'src/assets/json_repair.png',
       url: 'https://github.com/samfunmula/jsam_json_repair'
     },
     {
@@ -105,7 +105,7 @@
       description: '與 Hack MD API 串接，快速建立和管理你的文案。',
       tags: ['Extension','Groq','JS'],
       category: 'Extension',
-      image: '123.png',
+      image: 'src/assets/filter.png',
       url: 'https://github.com/samfunmula/ai_comments_filter'      
     }
   ]);
