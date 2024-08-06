@@ -2,7 +2,7 @@
     <div class="intro">
         <div class="intro_content">
             <div class="intro_text">
-                <img src="https://via.placeholder.com/150" alt="profile picture" class="intro_img">
+                <img :src="imgSrc" class="intro_img">
                 <h1 class="word">程尤欣</h1>
                 <h5 class="word">國立中山大學 資訊管理學系</h5>
             </div>
@@ -11,7 +11,7 @@
     </div>
 </template>
 <script setup lang="ts" name="Profile">
-
+import imgSrc from '@/assets/sam.jpg';
 </script>
 <style scoped>
     * {
@@ -30,8 +30,8 @@
     }
     .intro_img {
         border-radius: 100%;
-        width: 110px;
-        height: 110px;
+        width: 115px;
+        height: 130px;
         float: left;
     }
     .word {
