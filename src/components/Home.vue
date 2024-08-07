@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-    import Profile from '../components/Profile.vue';
-    import Content from '../components/Content.vue';
+    import Profile from '@/components/Profile.vue';
+    import Content from '@/components/Content.vue';
 </script>
   
