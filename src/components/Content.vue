@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="skill_share">
-            <img src="https://via.placeholder.com/300x200" alt="profile picture" class="personal_image">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="profile picture" class="personal_image"> -->
             <div class="MultiPageCard">
                 <button class="button-list" :class="{ active: currentContent === 'frontend' }" @click="showContent('frontend')">網頁前端</button>
                 <button class="button-list" :class="{ active: currentContent === 'backend' }" @click="showContent('backend')">網頁後端</button>
@@ -44,6 +44,32 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="experience-container">
+                <h4>工作經驗</h4><br>
+                <ul class="experience-list">
+                    <li>
+                        <h6>天眼衛星股份有限公司 - AI工程師</h6>
+                        <p>2024.05 ~ 至今</p>
+                    </li>
+                    <li>
+                        <h6>BigGo_樂方股份有限公司 - AI工程師</h6>
+                        <p>2023.06 ~ 2023.12</p>
+                    </li>
+                    <li>
+                        <h6>資展國際股份有限公司 - 資訊助理</h6>
+                        <p>2022.11 ~ 2023.04</p>
+                    </li>
+                    <li>
+                        <h6>瓦城股份有限公司 - 外場人員</h6>
+                        <p>2021.01 ~ 2021.02</p>
+                    </li>
+                    <li>
+                        <h6>全聯實業股份有限公司 - 賣場管理人員</h6>
+                        <p>2018.05 ~ 2019.09</p>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="contact" id="contact">
@@ -215,4 +241,62 @@
     p {
         text-align: center;
     }
+
+    .experience-container {
+        flex-grow: 1;
+        overflow: hidden;
+        margin-left: 30px;
+        background-color: transparent;
+    }
+
+    .experience-list {
+        list-style: none;
+        padding-left: 0;
+        height: 100%;
+        margin: 0;
+        overflow-y: auto;
+        text-align: center;
+        border-top: 1px solid black;
+        border-bottom: 54px solid black;
+    }
+
+    .experience-list li {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #e6e6e6;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .experience-list h6 {
+        margin-bottom: 8px;
+        font-size: 18px;
+        color: #333;
+    }
+
+    .experience-list p {
+        margin: 4px 0;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .experience-list {
+        list-style: none;
+        padding-left: 0;
+        height: 100%;
+        margin: 0;
+        overflow-y: auto;
+        scrollbar-width: none;
+        scrollbar-color: #979799 #e6e6e6;
+    }
+
+    .experience-list li:last-child {
+        margin-bottom: 25px;
+    }
+
+
+    .experience-list li:first-child {
+        margin-top: 20px;
+    }
+
 </style>
