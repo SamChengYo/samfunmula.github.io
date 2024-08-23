@@ -5,9 +5,7 @@
         {{ category }}
       </button>
     </div>
-    <div class="results-count">
-      結果數量: {{ filteredProjects.length }}
-    </div>
+    <br>
     <div class="project-grid">
       <div v-for="project in filteredProjects" :key="project.title" class="project-card">
         <img :src="project.image" alt="Project Image"  @click="openProject(project.url)" />
@@ -25,22 +23,22 @@
 <script setup lang="ts">
   import { ref, computed } from 'vue';
 
-  const categories = ['All', 'Front_End','APP', 'Back_End', 'AI','Extension'];
-  const selectedCategory = ref('All');
+  const categories = ['全部', '前端','APP', '後端', 'AI','Extension'];
+  const selectedCategory = ref('全部');
   const projects = ref([
-    {
-      title: '租屋網站',
-      description: '建立一個租屋網站，讓租屋人可以快速且方便的找到適合的房屋。',
-      tags: ['PHP', 'JS', 'HTML','CSS'],
-      category: 'Front_End',
-      image: 'path/to/image1.png',
-      url: 'https://github.com/samfunmula/house_php'
-    },
+    // {
+    //   title: '租屋網站',
+    //   description: '建立一個租屋網站，讓租屋人可以快速且方便的找到適合的房屋。',
+    //   tags: ['PHP', 'JS', 'HTML','CSS'],
+    //   category: '前端',
+    //   image: 'path/to/image1.png',
+    //   url: 'https://github.com/samfunmula/house_php'
+    // },
     {
       title: 'Json Repair',
       description: 'jsam_json_repair是一個 Python 套件，來修復錯誤的JSON字串(例如LLM生成的json)。',
       tags: ['Python'],
-      category: 'Back_End',
+      category: '後端',
       image: 'src/assets/json_repair.png',
       url: 'https://github.com/samfunmula/jsam_json_repair'
     },
@@ -60,19 +58,19 @@
       image: 'src/assets/visualcla.png',
       url: 'https://github.com/samfunmula/visualcla'
     },
-    {
-      title: 'translation',
-      description: '翻譯API，能夠翻譯200多種語言。',
-      tags: ['Python','HuggingFace'],
-      category: 'AI',
-      image: 'path/to/image5.png',
-      url: 'https://github.com/samfunmula/translation'
-    },
+    // {
+    //   title: 'translation',
+    //   description: '翻譯API，能夠翻譯200多種語言。',
+    //   tags: ['Python','HuggingFace'],
+    //   category: 'AI',
+    //   image: 'path/to/image5.png',
+    //   url: 'https://github.com/samfunmula/translation'
+    // },
     {
       title: 'HackMD_RAG',
       description: '利用RAG來分析HackMD的內容，並且從中回答相應的問題，減少使用者尋找資料的時間。',
       tags: ['Vue','JS', 'HTML','CSS'],
-      category: 'Front_End',
+      category: '前端',
       image: 'src/assets/webUI.png',
       url: 'https://github.com/samfunmula/HackMD_RAG'
     },
@@ -81,14 +79,14 @@
       description: '一個Voice to Text的API，可以自動總結會議紀錄。',
       tags: ['Python','HuggingFace'],
       category: 'AI',
-      image: 'path/to/image7.png',
+      image: 'src/assets/whisper.png',
       url: 'https://github.com/samfunmula/fast-whisper'
     },
     {
       title: 'MinIO_API',
       description: '與 MinIO_API 串接，快速進行存取。',
       tags: ['Python','FastAPI'],
-      category: 'Back_End',
+      category: '後端',
       image: 'src/assets/minio.png',
       url: 'https://github.com/samfunmula/toBucket'
     },
@@ -115,7 +113,7 @@
   };
 
   const filteredProjects = computed(() => {
-    if (selectedCategory.value === 'All') {
+    if (selectedCategory.value === '全部') {
       return projects.value;
     }
     return projects.value.filter(project => project.category === selectedCategory.value);
